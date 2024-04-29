@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <!-- Bootstrap início -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+
+<!-- Bootstrap fim -->
+<link rel="stylesheet" href="/CSS/viewTest.css">
+
+
+<script src="../app.js" type="module" defer></script>
+
+    <title>List</title>
+</head>
+<body>
+    <div class="navbar1">
+      <div id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/Regist.html">Regist</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/views/List.html">List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/Calculator.html">Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        
+    
+        <div class="container hero">
+            <div class="container">
+                <div class="row">
+                  <div class="col mb-5">
+                    <h1 class="display-4">Take a look at your candidates!</h1>
+                  </div>
+                </div>
+            
+                <div class="row mb-2">
+                  <div class="col-md-8">
+                    <input type="text" class="form-control" placeholder="Name" id="name1" />
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Age" id="age1" />
+                  </div>
+                  <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Nationality" id="nationality1" />
+                  </div>
+                  <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Contact" id="contact1" />
+                  </div>
+            
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-8">
+                    <input type="text" class="form-control" placeholder="About Me" id="aboutMe1" />
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-8">
+                    <input type="text" class="form-control" placeholder="photo path" id="photo1" />
+                  </div>
+                  <div class="col-md-2 justify-content-end">
+                    <button id="searchBtn" type="button" class="btn btn-primary">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                  <div class="row mb-2">
+                    <p><br><br><br></p>
+                  </div>
+            
+            
+                </div>
+            
+            
+                <div class="row">
+                  <div id="divCol" class="col">
+                    <table class="table table-scrollable">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Age</th>
+                          <th>Nationality</th>
+                          <th>Contact</th>
+                        </tr>
+                      </thead>
+                  
+                      <tbody id="usersList">
+            
+                      </tbody>
+                  
+                    </table>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© Approved by Catarina Campino</p>
+    </footer>
+        <div class="overlay"></div>
+        <div class="background">
+            <canvas id="hero-canvas" width="1920" height="1080"></canvas>
+        </div>
+    </div>
+    <script src="/regist.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Love Calculator</title>
+
+  <!-- Bootstrap início -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap fim -->
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <script src="../app.js" type="module" defer></script>
+
+</head>
+
+<body id="bodyList">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../resources/icons/logo.png" width="50" height="35" alt="Regist" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/views/Home.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/views/Regist.html">Regist</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/views/List.html">List</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/views/Calculator.html">Calculator</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col mb-5">
+        <h1 class="display-4">Take a look at your candidates!</h1>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <input type="text" class="form-control" placeholder="Name" id="name1" />
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-2">
+        <input type="text" class="form-control" placeholder="Age" id="age1" />
+      </div>
+      <div class="col-md-2">
+        <input type="text" class="form-control" placeholder="Nationality" id="nationality1" />
+      </div>
+      <div class="col-md-2">
+        <input type="text" class="form-control" placeholder="Contact" id="contact1" />
+      </div>
+
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <input type="text" class="form-control" placeholder="About Me" id="aboutMe1" />
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <input type="text" class="form-control" placeholder="photo path" id="photo1" />
+      </div>
+      <div class="col-md-2 justify-content-end">
+        <button id="searchBtn" type="button" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="row mb-2">
+        <p><br><br><br></p>
+      </div>
+
+
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Nationality</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody id="usersList">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'helvetica', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 90%;
+    max-height: calc(100% - 50px);
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    box-sizing: padding-box;
+    z-index: 4;
+}
+
+
+#circle1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Makes the div a circle */
+    background-size:contain; /* Ensures the image covers the entire circle */
+    background-position: center; /* Centers the image within the circle */
+    border: 2px solid black; /* Optional: Add a border around the circle */
+  }
+
+  #circle2 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Makes the div a circle */
+    background-size: contain; /* Ensures the image covers the entire circle */
+    background-position: center; /* Centers the image within the circle */
+    border: 2px solid black; /* Optional: Add a border around the circle */
+  }
+
+.info{
+    padding-top: 5px;
+}
+
+.hero h1 {
+    color: rgba(163,32,109,0.6);
+    font-weight: 300;
+    font-size:  40px;
+    text-transform: uppercase;
+    margin-bottom: 80px; /* Adjust the margin bottom as needed */
+    margin-top: 80px; /* Add margin-top to separate it from other elements */
+    border-bottom: 2px rgba(163,32,109,0.6) ;
+    z-index: 5;
+}
+
+.hero p {
+    color: #999999;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 150%;
+    max-width: 550px;
+}
+
+.hero p.small {
+    font-size: 12px;
+}
+
+
+.hero p a {
+    display: inline-block;
+    font-size: 22px;
+    color: rgba(163,32,109,0.4);
+    margin: 0 10px;
+    transform: rotateY(0deg);
+    transition: transform 0.2s ease-in-out, color 0.2s linear;
+}
+
+.hero p a:hover {
+    color: rgba(163,32,109,0.8);
+    transform: rotateY(360deg);
+    transition: transform 0.6s ease-in-out, color 0.4s linear;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    background: -moz-linear-gradient(top,  rgba(114,81,109,0.2) 0%, rgba(238,238,238,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(114,81,109,0.2) 0%,rgba(238,238,238,1) 100%);
+    background: linear-gradient(to bottom,  rgba(114,81,109,0.2) 0%,rgba(238,238,238,1) 100%);
+    z-index: 3;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #EEEEEE;
+    z-index: 1;
+}
+
+#hero-canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.circle-container {
+    display: flex;
+    justify-self: space-around; /* Align items at the start and end of the container */
+    align-items: flex-start;
+    
+    width: 100%;
+    height: auto;
+}
+
+.left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#getRandom1{
+    height: 30px;
+    width: 30px;
+}
+
+#getRandom2{
+    height: 30px;
+    width: 30px;
+}
+
+.phrase-box{
+    width: 1000px;
+    height: 100px;
+    background-color: rgba(163,32,109,0.6);
+    border: 1px solid black;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    overflow: auto;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.percentage-box {
+    width: 200px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid black;
+    color: rgba(163,32,109,0.6);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 60px; /* Increase margin bottom to create more space between the rectangle and the circles */
+    margin-top: 60px; /* Adjust margin top to separate it from the h1 */
+    font-size: 40px;
+}
+
+
+
+.left-circle, .right-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-bottom: 30px; /* Increase margin bottom to create more space between the circles and the rectangle */
+}
+
+.info-box {
+    width: 400px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: rgba(163,32,109,0.6);
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow:auto;
+
+}
+
+.about-me-box {
+    width: 400px;
+    height: 120px;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.linkedin-icon img {
+    width: 80px; /* Adjust the width of the image */
+    height: 24px; /* Adjust the height of the image */
+}
+
+.left-container {
+    margin-right: auto; /* Pushes the left container to the left */
+}
+
+.right-container {
+    margin-left: auto; /* Pushes the right container to the right */
+}
+
+.navbar {
+    padding: 20px 20px 10px 20px;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    position: absolute; /* Fixed position to stick to the top */
+    top: 0; /* Align to the top of the viewport */
+    width: 100%; /* Occupy full width of the viewport */
+    z-index: 1000; /* Set a high z-index to ensure it's above other content */
+    
+}
+
+.about-me{
+    color: black;
+}
+.navbar1 {
+    padding: 20px 20px 10px 20px;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    position: absolute; /* Fixed position to stick to the top */
+    top: 0; /* Align to the top of the viewport */
+    width: 100%; /* Occupy full width of the viewport */
+    z-index: 1000; /* Set a high z-index to ensure it's above other content */
+}
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.nav-item {
+    margin-right: 20px;
+}
+
+.btn-custom {
+    padding: 6px 12px; /* Adjust button padding */
+    font-size: 1rem; /* Adjust button font size */
+    color: rgba(163,32,109,0.6);
+    border: none;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border: 1px solid transparent; /* Add border to each button */
+    border-color: black;
+    background-color: white;
+    color: rgba(163,32,109,0.6);
+    border-radius: 15px;
+    padding: 5px 10px; /* Add padding to create space around the text */
+    width: 100px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    text-align: center; /* Horizontally center the text */
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+}
